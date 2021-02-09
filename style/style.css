@@ -28,9 +28,3 @@
     display: flex;
     flex-direction: column;
 }
-
-.diagram {
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
