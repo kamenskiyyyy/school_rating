@@ -7,19 +7,20 @@ import Header from '@vkontakte/vkui/dist/components/Header/Header';
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
+import s from './style.module.css';
 
 const Home = ({ id, go }) => (
 	<Panel id={id}>
 		<PanelHeader>Классный рейтинг</PanelHeader>
 		<Group header={<Header mode="secondary">Выберите категорию</Header>}>
 			<Div>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="junior">
+				<Button className={s.button} stretched size="l" mode="secondary" onClick={go} data-to="junior">
 					Младшая лига
 				</Button>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="middle">
+				<Button className={s.button} stretched size="l" mode="secondary" onClick={go} data-to="middle">
 					Старшая лига
 				</Button>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="premier">
+				<Button className={s.button} stretched size="l" mode="secondary" onClick={go} data-to="premier">
 					Премьер лига
 				</Button>
 			</Div>
