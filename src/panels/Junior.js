@@ -5,23 +5,20 @@ import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import PanelHeaderBack from '@vkontakte/vkui/dist/components/PanelHeaderBack/PanelHeaderBack';
 
-import persik from '../img/persik.png';
-import './Persik.css';
-
-const Persik = props => (
+const Junior = props => (
 	<Panel id={props.id}>
 		<PanelHeader
-			left={<PanelHeaderBack onClick={props.go} data-to="home"/>}
-		>
-			Persik
+			left={<PanelHeaderBack onClick={props.go} data-to="home"/>} >
+			Младшая лига
 		</PanelHeader>
-		<img className="Persik" src={persik} alt="Persik The Cat"/>
+		<iframe width="584" height="311" seamless frameBorder="0" scrolling="no"
+	src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRbETU57bEGSLFk6sp5q04IuuJwotXahurL5H6c9ZAJLgNVVO8c9rXWRNW1labOPgrROtkYKhXvw4AL/pubchart?oid=1836155378&amp;format=interactive"/>
 	</Panel>
 );
 
-Persik.propTypes = {
+Junior.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik;
+export default Junior;

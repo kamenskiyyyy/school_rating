@@ -6,7 +6,9 @@ import { AdaptivityProvider, AppRoot } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
-import Persik from './panels/Persik';
+import Junior from './panels/Junior';
+import Middle from "./panels/Middle";
+import Premier from "./panels/Premier";
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -38,7 +40,9 @@ const App = () => {
 			<AppRoot>
 				<View activePanel={activePanel} popout={popout}>
 					<Home id='home' fetchedUser={fetchedUser} go={go} />
-					<Persik id='persik' go={go} />
+					<Junior id='junior' go={go} />
+					<Middle id='middle' go={go} />
+					<Premier id='premier' go={go} />
 				</View>
 			</AppRoot>
 		</AdaptivityProvider>

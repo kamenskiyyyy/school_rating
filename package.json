@@ -1,8 +1,9 @@
 {
-  "name": "rating",
+  "name": "school_rating",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://kamenskiyyyy.github.io/school_rating",
   "scripts": {
     "start": "cross-env PORT=10888 HTTPS=true react-scripts start",
     "build": "react-scripts build",
@@ -13,12 +14,12 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@vkontakte/icons": "^1.82.0",
     "cross-env": "^5.2.0",
     "react-hot-loader": "^4.9.0",
     "react-scripts": "^4.0.1"
   },
   "dependencies": {
-    "@vkontakte/icons": "^1.18.2",
     "@vkontakte/vk-bridge": "^2.4.1",
     "@vkontakte/vk-miniapps-deploy": "0.0.17",
     "@vkontakte/vkjs": "^0.20.0",
